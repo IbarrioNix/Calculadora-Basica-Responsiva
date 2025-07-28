@@ -20,10 +20,9 @@ class AppConstants {
 
   static const double webBreakpoint = 600.0;
 
-  // 🎯 Theme - COMPLETA ESTE THEME
   static ThemeData get appTheme => ThemeData(
     primarySwatch: Colors.blue,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    scaffoldBackgroundColor: Colors.blueGrey,
+    scaffoldBackgroundColor: backgroundColor,
   );
 }
