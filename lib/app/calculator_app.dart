@@ -8,7 +8,7 @@ class CalculatorApp extends StatelessWidget {
     return MaterialApp(
       title: AppConstants.appTitle,
       theme: AppConstants.appTheme,
-      //home: CalculatorScreen(),
+      home: CalculatorScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
