@@ -11,10 +11,10 @@ class CalculatorLogic {
 
     if (model.waitingForNewNumber || model.displayText == '0') {
       // TODO: Si está esperando número nuevo, reemplazar display
-      newDisplay = model.displayText + number;
+      newDisplay = number;
     } else {
       // TODO: Si no, agregar al display actual
-      newDisplay = number;
+      newDisplay = model.displayText + number;
     }
 
     return model.copyWith(
@@ -46,9 +46,9 @@ class CalculatorLogic {
     } else {
       // TODO: Si no hay operación pendiente, guardar número y operación
       return model.copyWith(
-        operation: model.operation,
-        previousNumber: model.previousNumber,
-        waitingForNewNumber: model.waitingForNewNumber,
+        operation: operation,
+        previousNumber: currentNumber,
+        waitingForNewNumber: true,
       );
     }
   }
@@ -92,9 +92,9 @@ class CalculatorLogic {
 
     String newDisplay;
     if (model.waitingForNewNumber) {
-      newDisplay = model.displayText + '.';
+      newDisplay = '0.';
     } else {
-      newDisplay = '0';
+      newDisplay = model.displayText + '.';
     }
 
     return model.copyWith(
