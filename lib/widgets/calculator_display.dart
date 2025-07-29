@@ -20,7 +20,7 @@ class CalculatorDisplay extends StatelessWidget {
         color: AppConstants.displayBackground,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Text('0',
+      child: Text(displayText,
       style: TextStyle(
       fontSize: isWeb
       ? AppConstants.webDisplayFontSize
