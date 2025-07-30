@@ -59,7 +59,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             children: [
               // 📺 Display
               Expanded(
-                flex: 2,
+                flex: 1,
                 child: CalculatorDisplay(
                   displayText: _model.displayText,
                   isWeb: _isWeb,

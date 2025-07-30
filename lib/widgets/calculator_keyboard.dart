@@ -17,7 +17,7 @@ class CalculatorKeyboard extends StatelessWidget {
       children: [
         // Primeras 4 filas (4x4 = 16 botones)
         Expanded(
-          flex: 4,
+          flex: 6,
           child: GridView.count(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
@@ -33,7 +33,7 @@ class CalculatorKeyboard extends StatelessWidget {
         SizedBox(height: 8),
         // Última fila especial (0 es más ancho)
         Expanded(
-          flex: 1,
+          flex: 3,
           child: _buildBottomRow(),
         ),
       ],

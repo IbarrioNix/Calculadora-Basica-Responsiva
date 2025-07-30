@@ -11,8 +11,8 @@ class AppConstants {
   static const Color functionButtonColor = Colors.white24;
   static const Color textColor = Colors.white;
 
-  static const double mobileButtonSize = 70.0;
-  static const double webButtonSize = 80.0;
+  static const double mobileButtonSize = 20.0;
+  static const double webButtonSize = 30.0;
   static const double mobileFontSize = 20.0 ;
   static const double webFontSize = 24.0;
   static const double mobileDisplayFontSize = 36.0;
