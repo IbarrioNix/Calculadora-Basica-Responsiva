@@ -6,10 +6,10 @@ class CalculatorDisplay extends StatelessWidget {
   final bool isWeb;
 
   const CalculatorDisplay({
-    Key? key,
+    super.key,
     required this.displayText,
     required this.isWeb,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

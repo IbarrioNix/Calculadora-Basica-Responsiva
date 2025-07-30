@@ -94,7 +94,7 @@ class CalculatorLogic {
     if (model.waitingForNewNumber) {
       newDisplay = '0.';
     } else {
-      newDisplay = model.displayText + '.';
+      newDisplay = '${model.displayText}.';
     }
 
     return model.copyWith(

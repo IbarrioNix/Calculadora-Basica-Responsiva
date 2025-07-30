@@ -6,6 +6,8 @@ import '../utils/calculator_logic.dart';
 import '../constants/app_constants.dart';
 
 class CalculatorScreen extends StatefulWidget {
+  const CalculatorScreen({super.key});
+
   @override
   _CalculatorScreenState createState() => _CalculatorScreenState();
 }

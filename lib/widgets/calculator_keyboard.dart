@@ -6,10 +6,10 @@ class CalculatorKeyboard extends StatelessWidget {
   final Function(String, String) onButtonPressed;
 
   const CalculatorKeyboard({
-    Key? key,
+    super.key,
     required this.isWeb,
     required this.onButtonPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
